@@ -1,0 +1,73 @@
+{
+  "name": "easy-hookable",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Easily hookable.",
+  "author": "RayHao <https://github.com/l246804>",
+  "license": "MIT",
+  "homepage": "https://github.com/l246804/easy-hookable",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l246804/easy-hookable"
+  },
+  "bugs": {
+    "url": "https://github.com/l246804/easy-hookable/issues"
+  },
+  "keywords": [
+    "event",
+    "bus",
+    "mitter",
+    "plugins",
+    "hooks",
+    "hookable",
+    "tap",
+    "tapable",
+    "tappable"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "plop": "plop",
+    "cz": "cz",
+    "build": "vite build",
+    "release": "release-it",
+    "taze": "taze major -iI",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@rhao/types-base": "^1.6.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.2",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@rhao/plop-generators": "^1.2.9",
+    "commitizen": "^4.3.0",
+    "eslint": "^9.7.0",
+    "git-cz": "^4.9.0",
+    "plop": "^4.0.1",
+    "prettier": "^3.3.3",
+    "release-it": "^17.6.0",
+    "rollup": "^4.19.0",
+    "taze": "^0.16.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
