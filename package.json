@@ -1,7 +1,7 @@
 {
   "name": "easy-hookable",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Easily hookable.",
   "author": "RayHao <https://github.com/l246804>",
   "license": "MIT",
