@@ -1,11 +1,11 @@
 import type { AnyFn, AssertKeyOf, Promisify, ReplaceNever } from '@rhao/types-base'
-import { flatHooks, noop } from './utils'
 import type { HookTaskCaller } from './callers'
-import { parallelTaskCaller, serialTaskCaller, syncTaskCaller } from './callers'
-import type { DeprecatedHook, HookCallback, HookKeys, NestedHooks } from './types'
 import type { HookContext } from './Context'
-import { ContextHelper } from './ContextHelper'
+import type { DeprecatedHook, HookCallback, HookKeys, NestedHooks } from './types'
+import { parallelTaskCaller, serialTaskCaller, syncTaskCaller } from './callers'
 import { ExecutionStage } from './Context'
+import { ContextHelper } from './ContextHelper'
+import { flatHooks, noop } from './utils'
 
 export type InferCallback<HT, HN extends HookKeys<HT>> = HT[AssertKeyOf<
   HN,

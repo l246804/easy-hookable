@@ -1,6 +1,6 @@
 import type { AnyFn } from '@rhao/types-base'
-import { CALL_STRATEGY, type CallStrategy } from './callers'
 import type { NestedHooks } from './types'
+import { CALL_STRATEGY, type CallStrategy } from './callers'
 
 /**
  * 扁平化嵌套的 hooks

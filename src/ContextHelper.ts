@@ -1,6 +1,6 @@
 import type { AnyFn } from '@rhao/types-base'
-import type { HookKeys } from './types'
 import type { HookContext } from './Context'
+import type { HookKeys } from './types'
 import { ExecutionStage } from './Context'
 
 let currentContext: HookContext | null = null
